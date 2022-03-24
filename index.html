@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karasuno</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="js/funcoes.js"></script>
+    
+
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
+<body>
+<!--------------------------------------- menu -------------------------------------------------------------->
+    <div onclick="fecharModal()" id="cortina"></div>
+    <header id="topo" >
+        <button id="botao-menu"><a href="#menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a> </button>
+        <figure id="logo"></figure>
+    <nav id="menu">
+        <ul>
+            <a id="botao-fechar" href="#"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a>
+            <li><a href="#m1"> HISTORIA </a></li>
+            <li><a href="#m2"> QUEDA</a></li>
+            <li><a href="#m3"> FORMAÇÃO </a></li>
+            <li><a href="#wowslider-container0">GALERIA</a></li>
+            <li><a href="#" onclick="abrirModal()"> INSCREVA-SE </a></li>
+        </ul>
+    </nav>
+    </header>
+    <!------------------ MODAL ---------------------------->
+    <div id="jogador">
+        <form action="" method="get">
+            <h3>VENHA SER KARASUNO</h3>
+            <p>
+                <label>
+                    Nome:*
+                    <input type="text" id="fid-nome" name="fn-nome">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Email:*
+                    <input type="email" id="fid-email" name="fn-email">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Posição:*
+                    <input type="text" id="fid-posicao" name="fn-posicao">
+                </label>
+            </p>
+            <p>
+                <input onclick="validarFormulario()" class="botoes" type="button" value="Enviar">
+                <input onclick="limpar()" class="botoes" type="reset" value="Limpar">
+                <button onclick="fecharModal()" class="botoes">Cancelar</button>
+            </p>
+
+            <h2 id="mensagem-erro"></h2>
+        </form>
+    </div>
+<!--------------------------- banner ------------------------------------------->
+    <section id="banner">
+        <div id="texto-banner">
+        <h1>Voem alto corvos da karasuno!</h1>
+        <h2>Seja bem vindo ao site oficial da karasuno</h2>
+        </div>
+    </section>
+
+<!--------------------------- botao para o topo ------------------------------------------->
+    <a id="botao-topo" href="#topo"><ion-icon id="icon-topo" name="arrow-up-circle-outline""></ion-icon></a>
+
+
+<!--------------------------- informações principal ------------------------------------------->  
+    <main id="principal">
+        <section id="informacao" >
+            <figure>
+                <img src="img/1.jpg" alt="historia image" title="Banner para historia">
+                <span id="m1">
+                    <h3>Historia</h3>
+                    <p>
+                         A equipe Karasuno foi fundada há muito tempo pelo o treinador Ukai,
+                        o qual ajudou o time a chegar no Nacional com sua liderança de ferro e rigorosidade pulsante,
+                        juntamente das habilidades do Pequeno Gigante, o antigo melhor jogador,
+                        e o restante da equipe na época.
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/queda.jpg" alt="logo alternativo da karasuno" title="Imagem da queda">
+                <span id="m2">
+                    <h3>a queda</h3>
+                    <p>
+                        Após Karasuno ter conseguido grande sucesso e derrotado muitos outros times,
+                        eles tiveram uma onda enorme de massacres, o que fez a equipe perder rapidamente toda a sua popularidade,
+                        dessa forma, fazendo-a ser chamada de "Corvos que não voam", ou "Corvos sem asas", isso fez a equipe sofrer tambem uma queda de sua relevancia
+                        mas com a nossa nova equipe podemos nos lenvantar e sermos corvos que voam livres pelo céu.
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/formacao2.jpg" alt="formação" title="Imagem da equipe">
+                <span id="m3">
+                    <h3>formação da krasuno</h3>
+                    <p>
+                         Na escalação da karasuno temos: Yū Nishinoya como libero, Kei Tsukishima como defensor, Yamaguchi como Sacador
+                         Ryūnosuke Tanaka, como Shōyō Hinata como atacante, Tobio Kageyama como levantador, Kōshi Sugawara como levantador reserva e vice capitão Asahi Azumane como atacante principal e ace e Daichi Sawamura como capitão,
+                    </p>
+                </span>
+            </figure>
+        </section>
+<!--------------------------- Galeria ------------------------------------------->
+
+        <section id="galeria">
+            <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container0" >
+        <div class="ws_images"><ul>
+            <li><img src="data0/images/e6abd02d212ca616da9ef30bfb532c85.jpg" alt="e6abd02d212ca616da9ef30bfb532c85" title="e6abd02d212ca616da9ef30bfb532c85" id="wows0_0"/></li>
+            <li><img src="data0/images/uwp2061640.png" alt="uwp2061640" title="uwp2061640" id="wows0_1"/></li>
+            <li<img src="data0/images/wp2490697.jpg" alt="slideshow html code" title="wp2490697" id="wows0_2"/></li>
+            <li><img src="data0/images/4khaikyuuwallpapers.jpg" alt="4k-haikyuu-wallpapers" title="4k-haikyuu-wallpapers" id="wows0_3"/></li>
+        </ul></div>
+        <div class="ws_bullets"><div>
+            <a href="#" title="e6abd02d212ca616da9ef30bfb532c85"><span><img src="data0/tooltips/e6abd02d212ca616da9ef30bfb532c85.jpg" alt="e6abd02d212ca616da9ef30bfb532c85"/>1</span></a>
+            <a href="#" title="uwp2061640"><span><img src="data0/tooltips/uwp2061640.png" alt="uwp2061640"/>2</span></a>
+            <a href="#" title="wp2490697"><span><img src="data0/tooltips/wp2490697.jpg" alt="wp2490697"/>3</span></a>
+            <a href="#" title="4k-haikyuu-wallpapers"><span><img src="data0/tooltips/4khaikyuuwallpapers.jpg" alt="4k-haikyuu-wallpapers"/>4</span></a>
+        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery carousel</a> by WOWSlider.com v9.0</div>
+        <div class="ws_shadow"></div>
+        </div>	
+        <script type="text/javascript" src="engine0/wowslider.js"></script>
+        <script type="text/javascript" src="engine0/script.js"></script>
+        <!-- End WOWSlider.com BODY section -->
+        </section>
+    </main>
+	
+<!--------------------------- Noticias ------------------------------------------->
+    <section id="noticias">
+        <div id="texto-noticias">
+            <h2>Inscreva-se agora!</h2>
+            <h3>Receba novidades e noticias da equipe Karasuno</h3>
+        </div>
+        <form action="" method="get" id="formulario-noticias">
+            <input type="email" required id="fid-email" name="fn-email" placeholder="Seu e-mail">
+            <input type="button" value="Enviar" onclick="window.alert('Obrigado por se inscrever')">
+        </form>
+    </section>
+<!--------------------------- rodapé ------------------------------------------->
+    <footer id="rodape">
+        <nav id="redes-sociais">
+            <ul>
+                <a href=""> <li> <i class="fa fa-facebook fa-lg"></i></li> </a>
+                <a href=""> <li> <i class="fa fa-twitter fa-lg"></i></li> </a>
+                <a href=""> <li> <i class="fa fa-google fa-lg"></i></li> </a>
+                <a href=""> <li> <i class="fa fa-instagram fa-lg"></i></li> </a>
+                <a href=""> <li> <i class="fa fa-envelope fa-lg"></i></li> </a>
+            </ul>
+        </nav>
+        <address>
+            Copyright &copy; Valhalla Teck. Todos os direitos reservados.
+        </address>
+    </footer>
+   
+</body>
+</html>
